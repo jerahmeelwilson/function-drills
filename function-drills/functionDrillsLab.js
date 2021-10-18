@@ -199,7 +199,7 @@ let loser = 'Glimmer'
 
 function theEliminator(contestants,loser){
   for(let i = 0; i<contestants.length; i++){
-    if(contestants[i]=== loser){
+    if(contestants[i] === loser){
       contestants.splice(i,1);
     }
   }
@@ -233,6 +233,7 @@ console.log(toUpper(sampleString));
   return 'must provide a valid email address'
 */
 
+
 function emailCheck(email){
   if(email.toString().trim().includes("@") == true){
     return "email verified"
@@ -240,6 +241,7 @@ function emailCheck(email){
     return "must provide a valid email address"
   }
 }
+
 
 console.log(emailCheck("jerahmeel@gmail.com"));
 
@@ -290,7 +292,7 @@ let sampleArray1 = [0,1,2,3,4,5,6,7,8,9]
 
 function inOrder(array){
   for(let i = 0; i<array.length-1;i++){
-    if(array[i]+1 !== array[i+1]){
+    if(array[i] > array[i+1]){
       return false;
     }
   }
